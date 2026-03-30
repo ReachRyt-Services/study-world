@@ -106,7 +106,7 @@ export default function Home() {
               <p className="text-sm text-on-surface-variant font-body font-light leading-relaxed mb-10 tracking-wide">
                 Bridging the gap in healthcare with advanced training in clinical care, laboratory technology, and patient management at our state-of-the-art facilities.
               </p>
-              <a className="mt-auto text-[10px] font-headline font-bold uppercase tracking-[0.3em] text-secondary flex items-center gap-3 group-hover:gap-5 transition-all" href="/programs">
+              <a className="mt-auto text-[10px] font-headline font-bold uppercase tracking-[0.3em] text-secondary flex items-center gap-3 group-hover:gap-5 transition-all" href="/colleges/allied-health">
                 Learn More <span className="material-symbols-outlined text-xs">north_east</span>
               </a>
             </div>

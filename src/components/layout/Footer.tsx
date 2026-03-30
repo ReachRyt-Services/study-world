@@ -15,7 +15,7 @@ export default function Footer() {
           <ul className="space-y-4">
             <li><Link className="text-slate-400 hover:text-white transition-all text-xs font-light tracking-wide" href="/colleges/engineering">Engineering & Tech</Link></li>
             <li><Link className="text-slate-400 hover:text-white transition-all text-xs font-light tracking-wide" href="/colleges/arts">Arts & Science</Link></li>
-            <li><Link className="text-slate-400 hover:text-white transition-all text-xs font-light tracking-wide" href="/institutions">Paramedical Sciences</Link></li>
+            <li><Link className="text-slate-400 hover:text-white transition-all text-xs font-light tracking-wide" href="/colleges/allied-health">Paramedical Sciences</Link></li>
           </ul>
         </div>
         <div className="col-span-1">

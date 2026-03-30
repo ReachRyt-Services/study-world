@@ -26,7 +26,7 @@ const Navbar = () => {
         },
         {
             name: "Study World Paramedical",
-            href: "/institutions",
+            href: "/colleges/allied-health",
             description: "Training the backbone of the healthcare system.",
         }
     ];
