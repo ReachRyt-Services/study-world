@@ -142,7 +142,118 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Section */}
+      {/* Why Study World Section */}
+      <section id="why-study-world" className="px-8 py-24 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16">
+            <span className="inline-block mb-4 text-secondary text-xs font-light tracking-[0.4em] uppercase font-headline">Our Promise</span>
+            <h2 className="text-3xl md:text-4xl font-headline font-light text-primary mb-6 leading-tight uppercase tracking-[0.2em]">Why Study World?</h2>
+            <p className="text-base text-on-surface-variant font-body font-light leading-loose tracking-wide max-w-2xl">
+              We go beyond academics. Study World is built on a foundation of innovation, mentorship, and a commitment to shaping leaders.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {[
+              { icon: "star", title: "Legacy of Excellence", desc: "Over two decades of producing graduates who lead in industry, research, and public service." },
+              { icon: "group", title: "Expert Faculty", desc: "Learn from industry veterans and research scholars dedicated to your personal and academic growth." },
+              { icon: "hub", title: "Industry Connections", desc: "Strong MoUs with top companies ensuring real-world exposure, internships, and placement support." },
+            ].map((item) => (
+              <div key={item.title} className="p-6 border-l border-slate-100 hover:border-secondary transition-colors duration-500">
+                <span className="material-symbols-outlined text-secondary text-3xl font-light mb-6 block">{item.icon}</span>
+                <h4 className="text-sm font-headline font-medium text-primary uppercase tracking-widest mb-3">{item.title}</h4>
+                <p className="text-sm text-on-surface-variant font-body font-light leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Campus Life Section */}
+      <section id="campus-life" className="px-8 py-24 bg-background">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16">
+            <span className="inline-block mb-4 text-secondary text-xs font-light tracking-[0.4em] uppercase font-headline">Experience</span>
+            <h2 className="text-3xl md:text-4xl font-headline font-light text-primary mb-6 leading-tight uppercase tracking-[0.2em]">Our Campus Life</h2>
+            <p className="text-base text-on-surface-variant font-body font-light leading-loose tracking-wide max-w-2xl">
+              Life at Study World is vibrant and dynamic. From sports to cultural fests, our campus buzzes with energy.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { icon: "sports_soccer", label: "Sports & Athletics" },
+              { icon: "music_note", label: "Cultural Festivals" },
+              { icon: "volunteer_activism", label: "Social Initiatives" },
+              { icon: "science", label: "Innovation Clubs" },
+            ].map((item) => (
+              <div key={item.label} className="bg-white p-8 flex flex-col items-center text-center border border-slate-100 hover:border-secondary hover:shadow-md transition-all duration-500">
+                <span className="material-symbols-outlined text-secondary text-3xl font-light mb-4">{item.icon}</span>
+                <p className="text-xs font-headline font-medium text-primary uppercase tracking-widest">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Events Section */}
+      <section id="our-events" className="px-8 py-24 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16">
+            <span className="inline-block mb-4 text-secondary text-xs font-light tracking-[0.4em] uppercase font-headline">Happenings</span>
+            <h2 className="text-3xl md:text-4xl font-headline font-light text-primary mb-6 leading-tight uppercase tracking-[0.2em]">Our Events</h2>
+            <p className="text-base text-on-surface-variant font-body font-light leading-loose tracking-wide max-w-2xl">
+              From national-level technical symposiums to inter-collegiate cultural meets — our calendar is always full.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { icon: "emoji_events", title: "Annual Tech Fest", desc: "A national symposium bringing together innovators, researchers, and industry leaders.", badge: "Technical" },
+              { icon: "theater_comedy", title: "Kaleidoscope", desc: "Our flagship cultural extravaganza celebrating art, music, and talent from across Tamil Nadu.", badge: "Cultural" },
+              { icon: "handshake", title: "Industry Connect Day", desc: "Companies meet students for seminars, networking, and on-campus interview drives.", badge: "Placement" },
+            ].map((event) => (
+              <div key={event.title} className="border border-slate-100 hover:border-secondary transition-all duration-500">
+                <div className="p-8">
+                  <span className="inline-block text-[10px] font-headline font-bold uppercase tracking-[0.2em] text-secondary border border-secondary px-3 py-1 mb-6">{event.badge}</span>
+                  <span className="material-symbols-outlined text-primary text-3xl font-light mb-4 block">{event.icon}</span>
+                  <h4 className="text-sm font-headline font-medium text-primary uppercase tracking-widest mb-3">{event.title}</h4>
+                  <p className="text-sm text-on-surface-variant font-body font-light leading-relaxed">{event.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Latest News & Blogs Section */}
+      <section id="news-blogs" className="px-8 py-24 bg-background">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16">
+            <span className="inline-block mb-4 text-secondary text-xs font-light tracking-[0.4em] uppercase font-headline">Updates</span>
+            <h2 className="text-3xl md:text-4xl font-headline font-light text-primary mb-6 leading-tight uppercase tracking-[0.2em]">Latest News & Blogs</h2>
+            <p className="text-base text-on-surface-variant font-body font-light leading-loose tracking-wide max-w-2xl">
+              Stay updated with news, announcements, and insights from the Study World community.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { date: "March 2025", tag: "News", title: "Study World Engineering Achieves 98% Placement Record", desc: "Our Engineering batch of 2025 achieved a historic placement record with top MNCs." },
+              { date: "February 2025", tag: "Blog", title: "How to Choose the Right Engineering Branch", desc: "Our academic counsellors share insights on selecting the right specialization for your career goals." },
+              { date: "January 2025", tag: "News", title: "New MoU Signed with Leading IT Companies", desc: "Study World has signed partnership agreements with five new companies for campus placement drives." },
+            ].map((post) => (
+              <div key={post.title} className="bg-white border border-slate-100 hover:border-secondary transition-all duration-500">
+                <div className="p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <span className="text-[10px] font-headline font-bold uppercase tracking-[0.2em] text-secondary border border-secondary px-3 py-1">{post.tag}</span>
+                    <span className="text-[10px] text-on-surface-variant font-medium tracking-widest uppercase">{post.date}</span>
+                  </div>
+                  <h4 className="text-sm font-headline font-medium text-primary mb-3 leading-relaxed tracking-wide">{post.title}</h4>
+                  <p className="text-xs text-on-surface-variant font-body font-light leading-relaxed">{post.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="px-8 py-20 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-24 items-center">
           <div className="lg:w-5/12 relative">

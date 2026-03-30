@@ -111,7 +111,7 @@ const Navbar = () => {
                 </nav>
 
                 <div className="flex items-center">
-                    <Link href="/admissions" className="border border-secondary text-white px-8 py-2 rounded-none font-headline font-medium text-xs uppercase tracking-widest hover:bg-secondary transition-all duration-300 hidden sm:block">
+                    <Link href="/contact" className="border border-secondary text-white px-8 py-2 rounded-none font-headline font-medium text-xs uppercase tracking-widest hover:bg-secondary transition-all duration-300 hidden sm:block">
                         Apply Now
                     </Link>
                     <button 
