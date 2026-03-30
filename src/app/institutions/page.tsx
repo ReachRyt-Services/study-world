@@ -115,10 +115,10 @@ export default function InstitutionsHub() {
                 <p className="text-sm text-on-surface-variant font-body font-light leading-relaxed mb-10 flex-grow tracking-wide">
                   Training the backbone of the healthcare system with advanced diagnostic techniques and critical care training.
                 </p>
-                <button className="group/btn w-full bg-slate-50 text-primary py-4 rounded-none font-headline font-bold text-[10px] uppercase tracking-[0.3em] transition-all hover:bg-primary hover:text-white flex items-center justify-center gap-3">
+                <a href="/colleges/allied-health" className="group/btn w-full bg-slate-50 text-primary py-4 rounded-none font-headline font-bold text-[10px] uppercase tracking-[0.3em] transition-all hover:bg-primary hover:text-white flex items-center justify-center gap-3">
                   Explore College
                   <span className="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
-                </button>
+                </a>
               </div>
             </div>
 

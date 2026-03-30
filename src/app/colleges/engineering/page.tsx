@@ -1,53 +1,20 @@
 import React from "react";
 
 export default function EngineeringCourses() {
-  const courses = [
-    {
-      title: "B.Tech Computer Science & Engineering",
-      discipline: "Computer Science",
-      description: "Focus on algorithms, software architecture, and full-stack development with industry-aligned curriculum.",
-      duration: "4 Years",
-      eligibility: "10+2 with Physics, Chem, Math",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDbLGYzd-vfhyRJ9SoE77RUp5XS46p4ij6QpO44UsO7mHz0v2Z_23QmfG8B4zB_VWbJVYRt4SlDXX-DUCk1RAQ0dyxw2--Qj-EJPjJKNy0qp74rd289eTapek-3sudjUw7AjISNHR8IYnMqW0ohnEMyBQr0jElnH8LSl8HnlopACAikfmn6-JnH5qNXyrApNPPklGAWhdukgJEfX8HuTiUcwMRh1QjZfL5T-gCKUMhlq5N8O73Cn-u5qovWKRc-0aF7miotANSjheQc",
-      tag: "Computer Science"
-    },
-    {
-      title: "B.Tech Mechanical Engineering",
-      discipline: "Mechanical",
-      description: "Master thermodynamics, robotics, and advanced manufacturing processes in our state-of-the-art workshops.",
-      duration: "4 Years",
-      eligibility: "10+2 with PCM (Min 60%)",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCCizJixdL2x0rpp6lJNqOKmJWCcT6V-TKS63krPC0Eb9gM8SH7uSxbC4-QlvNqLvKTLe11UbSlGcv7fseCbcl4n7jkU3vTZ9vEKJP-SCWpEa9fGB8vuFEehOmg37fbDJ-oplL5sZN-1x1QzJqkoPt9ZF3BRJybZBMQ8ZFmaTwYY-n4eWcNbWPrCKdPxIQQO_iEw3z26mvctUG8BfxOnTCDtP5sqKg6cgmJwhH82JYu_7B8y6Hl_GlJmjWScbYu79oAMCyyXMRAayuk",
-      tag: "Mechanical"
-    },
-    {
-      title: "B.Tech AI & Data Science",
-      discipline: "Emerging Tech",
-      description: "Explore machine learning, neural networks, and big data analytics at our specialized AI Excellence center.",
-      duration: "4 Years",
-      eligibility: "10+2 with Math Focus",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuC72TAMnAWWjA-OQP3q6HggAINYNGG8BrLjiB_XP1oVI61fJBDP_g8zBIw9EDJ_gyUxl3sycx3ltbRsLfaKp7rKXdVauaAMFca9dyW-L39_aBttB53ERKpMnMParT1CQNfmiqt4d7MRZFrdiOy6DWl3t7UyUwSp5qTSAeQy4qgwLjmZAzlrdDOXu7nDIAWkcekMCKl__bNrpVARYzbtXhfXhHV9-t7jwXggl9bENn93Uu80uqmeaNTnREQGdftgvKvsY8TAt9_xuLtv",
-      tag: "Emerging Tech"
-    },
-    {
-      title: "B.Tech Electronics & Comm.",
-      discipline: "Electronics",
-      description: "VLSI design, embedded systems, and wireless communications for the next era of connectivity.",
-      duration: "4 Years",
-      eligibility: "10+2 with PCM Merit",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB3bxX-7xjkIlDtm1jEuZG88Ve2bYmhGceM_ITj6UA8nT7aOB5OY6CPaxrASJT1ijoMKnfBXYLedejQ0WywyPxTiGvu3mS_CjVdOrRQkpREId_t276eIZi-M-IsXZFdKuwLpFDOM1U-5YyH9rlgSkg0bTOnM50R5rLey-kMg1BIUlaDZWgWA_u3ZbgT3SSg1uiIG1-apV5fBa0ewPKpm45Cz18XeZ00DgyMW7wPGaYjw9WbEcqwoSYiFePBYUseb0vHC61e1YA2ZPuB",
-      tag: "Electronics"
-    },
-    {
-      title: "M.Tech Advanced Systems",
-      discipline: "Postgrad",
-      description: "Specialized research-driven program for working professionals and graduates aiming for leadership roles.",
-      duration: "2 Years",
-      eligibility: "B.Tech/B.E in related field",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDgGmefSs6hmZE__zp5Iv2pV-kR8z7FEjSi2AdO6daBRkqDCGeJEb_W0sFLetaPCTgM1jGCd74pbXH68kPrIgiqJfU0DgI7JTFgWSo5hKHZdq4PfSagD9QLQ69thRoZ60S1pWzva-gdVYhNzV2iBjVz_MnDQTl-7wmJkL_fo-GZVSWErLKP-qTFq8O8ACN9jRR-1ezghBkj_Vy7F96L8IA0TZFkHq3qf8kTb2gLTZ-EtxipiJt-XE6lEjrFSSc1xqb2WpRjdpAttjIg",
-      tag: "M.Tech"
-    }
+  const ugCourses = [
+    { title: "B.E Computer Science & Engineering", discipline: "Computer Science", duration: "4 Years", eligibility: "10+2 with Physics, Chemistry, Math" },
+    { title: "B.E CSE with Cyber Security", discipline: "Cyber Security", duration: "4 Years", eligibility: "10+2 with Physics, Chemistry, Math" },
+    { title: "B.E CSE with Artificial Intelligence & Machine Learning (AIML)", discipline: "AI & ML", duration: "4 Years", eligibility: "10+2 with Physics, Chemistry, Math" },
+    { title: "B.E Electronics and Communication Engineering", discipline: "Electronics", duration: "4 Years", eligibility: "10+2 with Physics, Chemistry, Math" },
+    { title: "B.E Electrical and Electronics Engineering", discipline: "Electrical", duration: "4 Years", eligibility: "10+2 with Physics, Chemistry, Math" },
+    { title: "B.E Mechanical Engineering", discipline: "Mechanical", duration: "4 Years", eligibility: "10+2 with Physics, Chemistry, Math" },
+    { title: "B.Tech Artificial Intelligence & Data Science (AIDS)", discipline: "AI & Data Science", duration: "4 Years", eligibility: "10+2 with Math Focus" },
+    { title: "B.Tech Information Technology", discipline: "IT", duration: "4 Years", eligibility: "10+2 with Physics, Chemistry, Math" },
   ];
+  const pgCourses = [
+    { title: "Master of Business Administration (MBA)", discipline: "Management", duration: "2 Years", eligibility: "Any UG Degree" },
+  ];
+
 
   return (
     <main className="bg-surface antialiased">
@@ -85,62 +52,63 @@ export default function EngineeringCourses() {
       {/* Course Grid */}
       <section className="py-32 px-8" id="courses">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-12">
-            <div className="max-w-2xl">
-              <h2 className="font-headline font-light text-3xl md:text-4xl text-primary tracking-[0.15em] mb-8 uppercase">Undergraduate & Graduate Programs</h2>
-              <p className="text-base text-on-surface-variant font-body font-light leading-loose tracking-wide">Our engineering curriculum is designed to meet the demands of a rapidly evolving global technological landscape.</p>
-            </div>
+          <div className="mb-24">
+            <h2 className="font-headline font-light text-3xl md:text-4xl text-primary tracking-[0.15em] mb-8 uppercase">Undergraduate Programs</h2>
+            <p className="text-base text-on-surface-variant font-body font-light leading-loose tracking-wide max-w-2xl">Our engineering curriculum is designed to meet the demands of a rapidly evolving global technological landscape.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {courses.map((course, idx) => (
-              <div key={idx} className="group bg-white rounded-none overflow-hidden shadow-none hover:shadow-2xl transition-all duration-500 border border-slate-50 flex flex-col h-full">
-                <div className="h-64 overflow-hidden relative">
-                  <img 
-                    alt={course.title} 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale hover:grayscale-0" 
-                    src={course.image}
-                  />
-                  <div className="absolute top-6 left-6 bg-primary text-white px-4 py-1.5 rounded-none text-[10px] font-bold tracking-[0.2em] font-headline uppercase">
-                    {course.tag}
-                  </div>
-                </div>
-                <div className="p-10 flex-grow flex flex-col">
-                  <h3 className="text-xl font-headline font-medium text-primary mb-6 uppercase tracking-wider">{course.title}</h3>
-                  <p className="text-sm text-on-surface-variant font-body font-light leading-relaxed mb-10 flex-grow tracking-wide">
-                    {course.description}
-                  </p>
-                  <div className="space-y-4 mb-10">
-                    <div className="flex items-center gap-4 text-xs text-on-surface font-body font-light tracking-wide">
-                      <span className="material-symbols-outlined text-secondary text-lg">schedule</span>
-                      <span>Duration: {course.duration}</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+            {ugCourses.map((course, idx) => (
+              <div key={idx} className="group bg-white border border-slate-100 hover:border-secondary hover:shadow-lg transition-all duration-500 flex flex-col">
+                <div className="p-6 flex flex-col flex-grow">
+                  <span className="inline-block text-[9px] font-headline font-bold uppercase tracking-[0.2em] text-secondary border border-secondary px-2 py-1 mb-4 self-start">{course.discipline}</span>
+                  <h3 className="text-sm font-headline font-medium text-primary mb-4 uppercase tracking-wide leading-snug flex-grow">{course.title}</h3>
+                  <div className="space-y-2 mt-4 pt-4 border-t border-slate-100">
+                    <div className="flex items-center gap-2 text-xs text-on-surface-variant font-body">
+                      <span className="material-symbols-outlined text-secondary text-base">schedule</span>
+                      <span>{course.duration}</span>
                     </div>
-                    <div className="flex items-center gap-4 text-xs text-on-surface font-body font-light tracking-wide">
-                      <span className="material-symbols-outlined text-secondary text-lg">school</span>
-                      <span>Eligibility: {course.eligibility}</span>
+                    <div className="flex items-center gap-2 text-xs text-on-surface-variant font-body">
+                      <span className="material-symbols-outlined text-secondary text-base">school</span>
+                      <span>{course.eligibility}</span>
                     </div>
-                  </div>
-                  <div className="mt-auto flex gap-4">
-                    <button className="flex-1 bg-slate-50 text-primary py-4 px-6 rounded-none font-headline font-bold text-[10px] uppercase tracking-[0.3em] hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-3">
-                      <span className="material-symbols-outlined text-sm">download</span>
-                      Brochure
-                    </button>
-                    <button className="p-4 bg-secondary text-white rounded-none hover:bg-primary transition-colors flex items-center justify-center">
-                      <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                    </button>
                   </div>
                 </div>
               </div>
             ))}
-            
-            {/* CTA Card */}
-            <div className="bg-primary p-12 flex flex-col justify-center text-center relative overflow-hidden group">
-              <div className="relative z-10">
-                <h3 className="text-2xl font-headline font-light text-white mb-8 uppercase tracking-[0.2em]">Seek Guidance</h3>
-                <p className="text-slate-300 mb-12 font-body font-light leading-relaxed tracking-wide">Our academic counselors are ready to help you map your career path in engineering.</p>
-                <button className="w-full py-4 bg-secondary text-white rounded-none font-headline font-bold text-[10px] uppercase tracking-[0.3em] transition-all hover:bg-white hover:text-primary">Talk to Counselor</button>
+          </div>
+
+          <div className="mb-12">
+            <h2 className="font-headline font-light text-3xl md:text-4xl text-primary tracking-[0.15em] mb-8 uppercase">Postgraduate Programs</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+            {pgCourses.map((course, idx) => (
+              <div key={idx} className="group bg-white border border-slate-100 hover:border-secondary hover:shadow-lg transition-all duration-500 flex flex-col">
+                <div className="p-6 flex flex-col flex-grow">
+                  <span className="inline-block text-[9px] font-headline font-bold uppercase tracking-[0.2em] text-secondary border border-secondary px-2 py-1 mb-4 self-start">{course.discipline}</span>
+                  <h3 className="text-sm font-headline font-medium text-primary mb-4 uppercase tracking-wide leading-snug flex-grow">{course.title}</h3>
+                  <div className="space-y-2 mt-4 pt-4 border-t border-slate-100">
+                    <div className="flex items-center gap-2 text-xs text-on-surface-variant font-body">
+                      <span className="material-symbols-outlined text-secondary text-base">schedule</span>
+                      <span>{course.duration}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-on-surface-variant font-body">
+                      <span className="material-symbols-outlined text-secondary text-base">school</span>
+                      <span>{course.eligibility}</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-secondary/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-1000"></div>
+            ))}
+          </div>
+
+          {/* CTA Card */}
+          <div className="bg-primary p-12 flex flex-col justify-center text-center relative overflow-hidden group max-w-2xl mx-auto">
+            <div className="relative z-10">
+              <h3 className="text-2xl font-headline font-light text-white mb-8 uppercase tracking-[0.2em]">Seek Guidance</h3>
+              <p className="text-slate-300 mb-12 font-body font-light leading-relaxed tracking-wide">Our academic counselors are ready to help you map your career path in engineering.</p>
+              <button className="w-full py-4 bg-secondary text-white rounded-none font-headline font-bold text-[10px] uppercase tracking-[0.3em] transition-all hover:bg-white hover:text-primary">Talk to Counselor</button>
             </div>
+            <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-secondary/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-1000"></div>
           </div>
         </div>
       </section>

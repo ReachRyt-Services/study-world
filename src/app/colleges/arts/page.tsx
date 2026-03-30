@@ -1,27 +1,16 @@
 import Link from "next/link";
 
 const courses = [
-  {
-    title: "B.Sc. Computer Science",
-    duration: "3 Years",
-    description: "Foundation in computation, programming, and data structures.",
-    slug: "bsc-cs",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAs5N51W5Tpn7H41S_O0r2-17Gzb3gB5sElGD0LTA3YGa_UbM92y3_aFVOCTHQBgRX20z6kgweeeK-j5boprcc7a8myZCKlQSWub6-bZiFg5WxZiWXujGw7tmez_ZRvxlwb1DYUfdnR9HHo7abGRMOT8j7l2Drui2g6LZsSQ-uPvjezWp4FYJpZ50w0pz5ZEAQyQMvmlyBUYSWxR5PiZ2oChu88QFTkJn_XrttzgDyX-tBalTMVtHpRDWF9IypVB5d9_ult8S1Mx6y7"
-  },
-  {
-    title: "B.A. English Literature",
-    duration: "3 Years",
-    description: "Explore the depth of language, criticism, and creative expression.",
-    slug: "ba-english",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDpNjQxwGg7bL8qiTfLpYjVe5uRs-67pFaLGtJr99gYRavOqbYGa7rVmg9bIycBosaSBQFez9k3mLbHetLSboG_7yKrAWeo0JImtv6S81mwVrNV7PnY7APL9ZJAYD4OV3d8a6lr8zh6Ki8l_B_GkvolyMXjyMTEVyNSX_fHgWfnRciNj_Jj4C5UPwATjW_0ZWVpNgFjmKKgzT6UuJ1NnJ_jnB8nAX_x92hAaxu4n4Zvl2-o8yHsG7b8ULP_gHdSpvZkgqfXUgs9q2r8"
-  },
-  {
-    title: "B.Com. General",
-    duration: "3 Years",
-    description: "Develop expertise in commerce, accounting, and business laws.",
-    slug: "bcom-general",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAJ1kukXQvt3v5QOMpFctqHn6R-ZSzp7lhPBaliZkdgcUAPCVhpVYnZVqQuLGfIDOu5HYfAwR9WEKpN_Yeb9tWkDsHkJ_SoFyTqiJzqedKWiiKurcbeMtISjYcLHV2Hxr71K1PLtjYKsQPsxL-sPOMUXJKKg8x2WhW3r52MBULBdJ6LoeKOCmV_jaZRgHf6zLCdpOGwy3VWMXTwyH77LYbkhiN31gheRQtlYvenDj7qqJgHNaISKvHqR-5YDjGIuJqNzopikQ7XAsms"
-  }
+  { title: "B.Com (CA)", duration: "3 Years", description: "Commerce with Computer Applications — bridging business and technology.", slug: "bcom-ca" },
+  { title: "BBA", duration: "3 Years", description: "Bachelor of Business Administration with comprehensive management training.", slug: "bba" },
+  { title: "BBA with Aviation", duration: "3 Years", description: "Business Administration with a specialized focus on the aviation industry.", slug: "bba-aviation" },
+  { title: "BBA Logistics & Supply Chain Management", duration: "3 Years", description: "Managing global supply chains and logistics operations for modern industries.", slug: "bba-logistics" },
+  { title: "BCA", duration: "3 Years", description: "Bachelor of Computer Applications — software, databases, and systems design.", slug: "bca" },
+  { title: "BCA with IBM", duration: "3 Years", description: "BCA with exclusive IBM curriculum integration and industry certification.", slug: "bca-ibm" },
+  { title: "BSc AI & DS", duration: "3 Years", description: "Artificial Intelligence and Data Science — building the next generation of AI practitioners.", slug: "bsc-ai-ds" },
+  { title: "BSc Computer Science", duration: "3 Years", description: "Foundation in computation, programming, and data structures.", slug: "bsc-cs" },
+  { title: "BSc Information Technology", duration: "3 Years", description: "IT infrastructure, networking, and systems management.", slug: "bsc-it" },
+  { title: "BSc Clinical Psychology", duration: "3 Years", description: "Understanding the human mind — clinical assessment, therapy, and behavioral science.", slug: "bsc-clinical-psychology" },
 ];
 
 export default function ArtsPage() {
@@ -42,19 +31,21 @@ export default function ArtsPage() {
 
       {/* Courses Grid */}
       <section className="py-24 px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mb-16">
+          <h2 className="font-headline font-light text-3xl md:text-4xl text-primary tracking-[0.15em] mb-6 uppercase">Courses Offered @ SWCAS</h2>
+          <p className="text-base text-on-surface-variant font-body font-light max-w-2xl normal-case">Affiliated to Bharathiar University, Coimbatore. Explore our diverse range of undergraduate programs.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {courses.map((course, index) => (
-            <Link key={course.slug} href={`/courses/${course.slug}`} className={`group block bg-white border border-primary/5 hover:border-primary/20 transition-all duration-500 overflow-hidden shadow-sm hover:shadow-2xl animate-scale-in`} style={{ animationDelay: `${index * 150}ms` }}>
-              <div className="aspect-square relative overflow-hidden">
-                <img src={course.image} alt={course.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 text-[10px] font-bold tracking-widest">{course.duration}</div>
-              </div>
+            <div key={course.slug} className="group block bg-white border border-primary/10 hover:border-secondary transition-all duration-500 shadow-sm hover:shadow-lg" style={{ animationDelay: `${index * 100}ms` }}>
               <div className="p-8">
-                <h3 className="text-xl font-black text-primary leading-tight uppercase group-hover:text-secondary transition-colors mb-4">{course.title}</h3>
-                <p className="text-slate-500 text-xs normal-case leading-relaxed mb-6">{course.description}</p>
-                <span className="text-[10px] font-black tracking-widest text-primary/40 group-hover:text-primary transition-colors">VIEW DETAILS →</span>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="inline-block text-[9px] font-headline font-bold uppercase tracking-[0.2em] text-white bg-primary px-3 py-1">{course.duration}</span>
+                </div>
+                <h3 className="text-base font-black text-primary leading-tight uppercase group-hover:text-secondary transition-colors mb-3">{course.title}</h3>
+                <p className="text-slate-500 text-xs normal-case leading-relaxed">{course.description}</p>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </section>
